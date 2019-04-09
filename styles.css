@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    background: yellow;
+}
+
+#click {
+    padding: 10px;
+    border-radius: 5pc;
+    border: solid 5px blue;
+    background: red;
+    color: white;
+}
