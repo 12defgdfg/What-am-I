@@ -22,17 +22,19 @@ $("#click").click(function() {
         $("#full").hide();
         $("#the").show();
         $("#friend").hide();
-        $("#result").text("You are Full House");
+        $("#result").text("You are The Office");
     } else if (year >= 2000 && "A".charCodeAt(0) <= firstInitial.toUpperCase().charCodeAt(0) && firstInitial.toUpperCase().charCodeAt(0) <= "M".charCodeAt(0)) {
         $("#big").hide();
         $("#full").hide();
         $("#the").hide();
         $("#friend").show();
+        $("#result").text("You are Friends");
     } else if (year >= 2000 && "N".charCodeAt(0) <= firstInitial.toUpperCase().charCodeAt(0) && firstInitial.toUpperCase().charCodeAt(0) <= "Z".charCodeAt(0)) {
         $("#big").show();
         $("#full").hide();
         $("#the").hide();
         $("#friend").hide();
+        $("#result").text("You are Big Bang Theory");
     }
 
 });
