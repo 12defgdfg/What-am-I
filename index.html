@@ -1,5 +1,7 @@
 <!DOCTYPE html> <html><head>
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <title>What am I?</title>
+    
     <script>function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /*! jQuery v3.2.1 | (c) JS Foundation and other contributors | jquery.org/license */
@@ -4037,8 +4039,15 @@
     border: solid 5px blue;
     background: red;
     color: white;
+}
+#result{
+  margin-top: 15px;  
+  font-size: 50px;
+  font-family: 'Great Vibes', cursive;
 }</style></head>
+    
     <body>
+    
         <h1> Which One is You?</h1>
         <h2> Which TV Show Are You? </h2>
         <h3>What Year Were You Born In </h3>
@@ -4080,17 +4089,19 @@ $("#click").click(function() {
         $("#full").hide();
         $("#the").show();
         $("#friend").hide();
-        $("#result").text("You are Full House");
+        $("#result").text("You are The Office");
     } else if (year >= 2000 && "A".charCodeAt(0) <= firstInitial.toUpperCase().charCodeAt(0) && firstInitial.toUpperCase().charCodeAt(0) <= "M".charCodeAt(0)) {
         $("#big").hide();
         $("#full").hide();
         $("#the").hide();
         $("#friend").show();
+        $("#result").text("You are Friends");
     } else if (year >= 2000 && "N".charCodeAt(0) <= firstInitial.toUpperCase().charCodeAt(0) && firstInitial.toUpperCase().charCodeAt(0) <= "Z".charCodeAt(0)) {
         $("#big").show();
         $("#full").hide();
         $("#the").hide();
         $("#friend").hide();
+        $("#result").text("You are Big Bang Theory");
     }
 
 });</script></body></html>
